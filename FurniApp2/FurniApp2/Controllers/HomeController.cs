@@ -1,5 +1,6 @@
 ﻿using FurniApp2.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using System.Diagnostics;
 
 namespace FurniApp2.Controllers
@@ -15,7 +16,7 @@ namespace FurniApp2.Controllers
 
 		public IActionResult Index()
 		{
-			return View("~/Views/Home/Index.cshtml");
+			return View();
 		}
 		public IActionResult Test()
 		{
